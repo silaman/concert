@@ -1,10 +1,10 @@
 #!/bin/bash
 
-export IBM_ENTITLEMENT_KEY=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJQk0gTWFya2V0cGxhY2UiLCJpYXQiOjE2MDE5MzU5MzIsImp0aSI6IjJjN2U3ZWJmNDkwYjRmODVhYWY1OGFhNmQ3NWI4ODYxIn0.SB8ceB6b630fG_mU-vGzkffAdLi9YhMEZK4maH10nF0
+export IBM_ENTITLEMENT_KEY=
 export CONCERT_ID=ibmconcert
 export CONCERT_PW=passw0rd
 export CONCERT_NS=ibm-concert
-export CONCERT_SC=ocs-storagecluster-ceph-rbd
+export CONCERT_SC=managed-nfs-storage
 export OCP_USERNAME=ocadmin
 export OCP_PASSWORD=ibmrhocp
 export OCP_URL=https://api.ocp.ibm.edu:6443
