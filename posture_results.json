@@ -1,0 +1,270 @@
+{
+  "assessment-results": {
+    "uuid": "d2b9bba4-e626-471c-8264-4fb240b2ab78",
+    "scan_date": "2024-05-12 07:44:20 +0000 UTC",
+    "metadata": {
+      "title": "NIST scan results",
+      "description": "This result provides the scan results for compliance check for the system"
+    },
+    "environment": "prod",
+    "profile_name": "Compliance profile",
+    "results": [
+      {
+        "observations": [
+          {
+            "uuid": "8807eb6e-0c05-43bc-8438-799739615e34",
+            "subjects": [
+              {
+                "subject-uuid": "61d3a95e-ea1d-47f2-b512-301260407e54",
+                "title": "Cloud Object Storage",
+                "type": "component"
+              }
+            ],
+            "remarks": "One or more conditions in rule rc7a326e9-77e3-41ab-957f-eeaaaea12999 were not met, indicating potential configuration issues in the Cloud Object Storage component.",
+            "relevant-evidence": [
+              {
+                "description": "Log file containing configuration changes made to the system",
+                "href": ""
+              }
+            ]
+          },
+          {
+            "uuid": "8807eb6e-0c05-43bc-8438-799739615e35",
+            "subjects": [
+              {
+                "subject-uuid": "61d3a95e-ea1d-47f2-b512-301260407e53",
+                "title": "IAM User",
+                "type": "component"
+              }
+            ],
+            "remarks": "One or more conditions in rule rc7a326e9-77e3-41ab-957f-eeaaaea12999 were not met, suggesting misconfigurations or policy violations related to IAM User management.",
+            "relevant-evidence": [
+              {
+                "description": "Log file containing configuration changes made to the system",
+                "href": ""
+              }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "uuid": "45d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-1",
+              "status": {
+                "state": "not-satisfied"
+              }
+            },
+            "remarks": "The System Engineer role in GoodRead AwesomeCloud account has been incorrectly configured, allowing high-risk actions that should not be permitted. Immediate reconfiguration is necessary to restrict these permissions and ensure compliance with security standards.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e34"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-2",
+              "status": {
+                "state": "not-satisfied"
+              }
+            },
+            "remarks": "The configuration of the System Engineer role allows unauthorized high-risk actions, posing significant security risks. The permissions should be reassessed and adjusted to align with the principle of least privilege.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e34"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-3",
+              "status": {
+                "state": "not-satisfied"
+              }
+            },
+            "remarks": "The inappropriate configuration of the System Engineer role allowing high-risk actions must be rectified to prevent unauthorized access to critical system functions.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e34"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-7",
+              "status": {
+                "state": "not-satisfied"
+              }
+            },
+            "remarks": "This misconfiguration, which allows the System Engineer role to perform high-risk actions, needs immediate correction to align with security best practices and avoid potential exploitation.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e34"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-8",
+              "status": {
+                "state": "satisfied"
+              }
+            },
+            "remarks": "The System Engineer role's permissions have been successfully adjusted to remove high-risk actions, aligning the configuration with the security policies and reducing the risk of unauthorized activities.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e34"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-14",
+              "status": {
+                "state": "satisfied"
+              }
+            },
+            "remarks": "Following a review, the System Engineer role has been correctly configured, removing high-risk permissions and ensuring compliance with security requirements.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e34"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "at-2",
+              "status": {
+                "state": "not-satisfied"
+              }
+            },
+            "remarks": "The System Engineer role's misconfiguration allowing high-risk actions requires urgent remediation to prevent unauthorized access to critical system functions.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e35"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "pe-13",
+              "status": {
+                "state": "not-satisfied"
+              }
+            },
+            "remarks": "High-risk actions should not be permitted for the System Engineer role. The current configuration needs to be reviewed and corrected to prevent potential security breaches.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e35"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-17",
+              "status": {
+                "state": "not-satisfied"
+              }
+            },
+            "remarks": "The System Engineer role should not be configured to allow high-risk actions. This misconfiguration must be corrected to safeguard against unauthorized system modifications.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e35"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-18",
+              "status": {
+                "state": "satisfied"
+              }
+            },
+            "remarks": "The misconfiguration allowing the System Engineer role to perform high-risk actions has been corrected, aligning the role's permissions with security best practices.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e35"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-19",
+              "status": {
+                "state": "satisfied"
+              }
+            },
+            "remarks": "After the review, the System Engineer role's permissions have been adjusted, removing unauthorized high-risk actions and securing the account.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e35"
+              }
+            ]
+          },
+          {
+            "uuid": "15d8a6c2-1368-4bad-9ba0-7141f0a32889",
+            "title": "GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions",
+            "description": "The assessor's security automation platform detected that the system engineer's role is permitted to perform high-risk actions in the GoodRead AwesomeCloud account, including the deletion and resetting of audit logs, and modifications to security monitoring configurations. These permissions are inappropriate for the system engineer role, indicating a misconfiguration.",
+            "target": {
+              "type": "control-id",
+              "target-id": "ac-20",
+              "status": {
+                "state": "satisfied"
+              }
+            },
+            "remarks": "The System Engineer role has been successfully reconfigured to remove high-risk permissions, ensuring the security of the GoodRead AwesomeCloud account.",
+            "related-observations": [
+              {
+                "observation-uuid": "8807eb6e-0c05-43bc-8438-799739615e35"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
