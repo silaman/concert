@@ -6,7 +6,7 @@ export PROJECT_OPERATOR=aaf
 export PROJECT_INSTANCE=concert
 export STG_CLASS_BLOCK=managed-nfs-storage
 export STG_CLASS_FILE=managed-nfs-storage
-export IBM_ENTITLEMENT_KEY=
+export IBM_ENTITLEMENT_KEY=`cat ibm_entitlement_key`
 export OCP_PASSWORD=ibmrhocp
 export OCP_USERNAME=ocadmin
 
